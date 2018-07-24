@@ -4,7 +4,7 @@ implementation_name: amman
 two_factor_auth: disabled
 selinux_state: disabled
 implementer_interface: disabled
-omods: ["file:///tmp/bahmnimsf-2.0.omod", "file:///tmp/auditlog-1.0-SNAPSHOT.omod"]
+omods: ["file:///tmp/bahmnimsf-2.0.omod"]
 SSLCertificateFilePath: /etc/letsencrypt/live/qa-amman.ehealthunit.org/cert.pem
 SSLCertificateKeyFilePath: /etc/letsencrypt/live/qa-amman.ehealthunit.org/privkey.pem
 SSLCertificateChainFilePath: /etc/letsencrypt/live/qa-amman.ehealthunit.org/chain.pem

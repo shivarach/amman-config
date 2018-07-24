@@ -22,12 +22,12 @@
                 {
                   "name": "bedManagement",
                   "translationKey": "PATIENT_BED_MANAGEMENT_PAGE_KEY",
-                  "url": "../ipd/#/bedManagement/patient/{{patientUuid}}/visit/{{visitUuid}}"
+                  "url": "../bedmanagement/#/bedManagement/patient/{{patientUuid}}/visit/{{visitUuid}}"
                 },
                 {
                   "name": "ipdDashboard",
                   "translationKey": "PATIENT_IPD_DASHBOARD_KEY",
-                  "url": "../ipd/#/patient/{{patientUuid}}/visit/{{visitUuid}}/dashboard"
+                  "url": "../bedmanagement/#/patient/{{patientUuid}}/visit/{{visitUuid}}/dashboard"
                 }
               ]
             },

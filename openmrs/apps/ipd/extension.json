@@ -10,11 +10,11 @@
             "translationKey": "MODULE_LABEL_ADMITTED_PATIENT_KEY",
             "links": [
                 {
-                    "url": "/bahmni/ipd/#/bedManagement/patient/{{patientUuid}}",
+                    "url": "/bahmni/bedmanagement/#/bedManagement/patient/{{patientUuid}}",
                     "linkColumn": "identifier",
                     "newTab": false
                 }, {
-                    "url": "/bahmni/ipd/#/bedManagement/patient/{{patientUuid}}",
+                    "url": "/bahmni/bedmanagement/#/bedManagement/patient/{{patientUuid}}",
                     "linkColumn": "Bed Management",
                     "newTab": true
                 }, {

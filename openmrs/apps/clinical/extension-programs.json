@@ -113,7 +113,7 @@
           "newTab": false
         },
         {
-          "url": "/bahmni/ipd/#/bedManagement/patient/{{patientUuid}}",
+          "url": "/bahmni/bedmanagement/#/bedManagement/patient/{{patientUuid}}",
           "linkColumn": "bed management",
           "newTab": true
         },

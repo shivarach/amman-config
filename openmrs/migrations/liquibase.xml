@@ -7183,4 +7183,26 @@
             call create_reference_mapping_msf_internal('PIAD, SDQ S11-17', 'SDQ11_17');
         </sql>
     </changeSet>
+    <changeSet id="Amman-201807261100" author="Saikumar" context="upgrade-0.91">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM location_tag WHERE name = 'Admission Location' AND description = 'Tag for Bed management module' AND retired = FALSE;
+            </sqlCheck>
+        </preConditions>
+        <comment>Add new admission location tag, will be used to map all parent locations of bed management</comment>
+        <sql>INSERT INTO location_tag (name, description, creator, date_created, retired, retired_by, date_retired, retire_reason, uuid, changed_by, date_changed) VALUES ('Admission Location', 'Tag for Bed management module', 1, now(), FALSE, null, null, null, uuid(), null, null);</sql>
+    </changeSet>
+    <changeSet id="Amman-201807261148" author="Saikumar" context="upgrade-0.91">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM location_tag_map WHERE location_tag_id = (SELECT location_tag_id FROM location_tag WHERE name = 'Admission Location' AND description = 'Tag for Bed management module' AND retired = FALSE);
+            </sqlCheck>
+        </preConditions>
+        <comment>Map ward, kahramana, RC parent locations to admission location</comment>
+        <sqlFile path="bedManagement/mapParentLocationsToAdmissionLocation.sql"/>
+    </changeSet>
+    <changeSet id="Amman-201807261544" author="Saikumar" context="upgrade-0.91">
+        <comment>Delete unused admission locations and their location tag map links</comment>
+        <sqlFile path="bedManagement/deleteUnusedAdmissionLocationsAndMapLinks.sql"/>
+    </changeSet>
 </databaseChangeLog>

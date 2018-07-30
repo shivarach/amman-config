@@ -1595,7 +1595,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
              conditions.show.push("MPA, Followup Plan", "MPA, Independence of Patient", "MPA, Functional status of the patient", "MPA, Pain Assessment", "MPA, Summary neurological examination (sensation)", "MPA, Objective examination", "MPA, Functional examination", "MPA, Facial Disability Index", "MPA, Additional comments")
          }
          else {
-             conditions.show.push("MPA, Date recorded", "MPA, Type of assessment")
+             conditions.show.push("MPA, Date recorded")
              conditions.hide.push("MPA, Previous history of physiotherapy", "MPA, Chief complaint of patient", "MPA, Problem List", "MPA, Independence of Patient", "MPA, Functional status of the patient", "MPA, Pain Assessment", "MPA, Summary neurological examination (sensation)", "MPA, Objective examination", "MPA, Functional examination", "MPA, Facial Disability Index", "MPA, Additional comments", "MPA, Followup Plan")
           }
           return conditions;

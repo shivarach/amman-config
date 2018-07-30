@@ -827,7 +827,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         };
         var conditionConcept = formFieldValues['ONN, Does the patient have a dressing?'];
         if (conditionConcept == "Yes") {
-            conditions.show.push("ONN, Dressing")
+            conditions.show.push("ONN, Dressing", "ONN, Description of wound")
         }
         else {
             conditions.hide.push("ONN, Dressing")
@@ -939,7 +939,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         };
         var conditionConcept = formFieldValues['WWN, Does the patient have a dressing?'];
         if (conditionConcept == "Yes") {
-            conditions.show.push("WWN, Dressing")
+            conditions.show.push("WWN, Dressing", "WWN, Description of wound")
         }
         else {
             conditions.hide.push("WWN, Dressing")

@@ -265,13 +265,6 @@
           }
         },
         {
-          "name": "fstgWithNewObs",
-          "type": "MRSGeneric",
-          "config": {
-            "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/fstgWithNewObs.sql"
-          }
-        },
-        {
           "name": "surgeonObsTime",
           "type": "MRSGeneric",
           "config": {
